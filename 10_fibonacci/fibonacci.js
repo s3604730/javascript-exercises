@@ -1,13 +1,18 @@
 const fibonacci = function(n) {
-    
+    if(n < 0){
+        return "OOPS";
+
+    }else{
     if(n <= 1){
-        return n;
+        return parseInt(n);
     
     }
     let a = fibonacci(n-1)+ fibonacci(n-2);
-    let b = Number(a);
-    console.log(b);
+    let b = parseInt(a);
+   
+
     return b;
+}
 
 };
 
